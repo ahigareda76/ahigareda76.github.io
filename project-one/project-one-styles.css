@@ -1,0 +1,74 @@
+h1,h2,h3,h4,h5,h6,p {
+    margin:0;
+    padding:0;
+    }
+body {
+    background-color:#D795EE;
+}
+
+#letterform-character 
+{
+    color: #1C7B20;
+font-family: Creepster;
+font-size: 46.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#alpha {
+    color: #36E43D;
+font-family: Creepster;
+font-size: 6.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.bodytext {
+    color: #0E360F;
+font-family: Crimson Pro;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.bodytext em {
+    color: #1C7B20;
+font-family: Creepster;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.heading {
+    color: #1C7B20;
+font-family: Creepster;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#photo {
+border-radius: 5.6875rem;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+width: 5.625rem;
+height: 5.6875rem;
+flex-shrink: 0;
+}
+
+#heading1 {
+    color: #1C7B20;
+font-family: Creepster;
+font-size: 4rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+h1 {
+    margin:60px;
+}
