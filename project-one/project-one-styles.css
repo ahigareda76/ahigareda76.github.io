@@ -18,6 +18,10 @@ font-weight: 400;
 line-height: normal;
 }
 
+#letterform-container {
+    position:relative;
+}
+
 #alpha {
     color: #36E43D;
 font-family: Creepster;
