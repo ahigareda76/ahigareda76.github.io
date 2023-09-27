@@ -6,21 +6,70 @@ body {
     background-color:#D795EE;
     width: 64rem;
     height: 85.375rem;
+    max-width: 43.75rem;
+    margin: auto;
 }
+
+#slime {
+    width: 73.9375rem;
+    height: 17.4375rem;
+    margin: 0;
+}
+
+/* ****letterform and button**** */
 
 #letterform-character 
 {
     color: #1C7B20;
-font-family: Creepster;
-font-size: 46.875rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Creepster;
+    font-size: 46.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 20.0265rem;
+    height: 54.8125rem;
+    
 }
+
 
 #letterform-container {
     position:relative;
+    display: flex;
+    margin: 0;
 }
+
+#skeleton {
+    display: none;
+    position: absolute;
+}
+
+#button {
+    width: 5.8705rem;
+    height: 12.55081rem;
+    flex-shrink: 0;
+    margin-right: 4.7rem;
+
+
+}
+
+/* #button:hover {
+    color:
+} */
+
+#content {
+    display:flex;
+
+}
+
+#image-and-other {
+    display: flex;
+    margin-bottom: auto;
+}
+
+
+/* ***styling*** */
+
+
 
 #alpha {
     color: #36E43D;
@@ -32,12 +81,15 @@ line-height: normal;
 }
 
 .bodytext {
+    width: 16.875rem;
+    height: 16.875rem;
+    flex-shrink: 0;
     color: #0E360F;
-font-family: Crimson Pro;
-font-size: 1.125rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Crimson Pro;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .bodytext em {
@@ -66,7 +118,7 @@ height: 5.6875rem;
 flex-shrink: 0;
 }
 
-#heading1 {
+#creepster-heading {
     color: #1C7B20;
 font-family: Creepster;
 font-size: 4rem;
