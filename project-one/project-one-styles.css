@@ -39,7 +39,7 @@ body {
     position:relative;
     display: flex;
     margin: 0;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items:center;
 }
 
@@ -50,8 +50,6 @@ body {
 
 #button {
     position:relative;
-    width: 5.8705rem;
-    height: 12.55081rem;
     flex-shrink: 0;
     /* margin: 0 auto; */
 }
