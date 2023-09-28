@@ -2,18 +2,21 @@ h1,h2,h3,h4,h5,h6,p {
     margin:0;
     padding:0;
     }
+    
 body {
     background-color:#D795EE;
-    width: 64rem;
-    height: 85.375rem;
-    max-width: 43.75rem;
+    width: 1024px;
+    height: 1366px;
     margin: auto;
+    
 }
 
 #slime {
-    width: 73.9375rem;
-    height: 17.4375rem;
-    margin: 0;
+    width: 1183px;
+    height:279px;
+    margin: auto 0;
+    align-self:center;
+    border-top: 100%;
 }
 
 /* ****letterform and button**** */
@@ -26,16 +29,18 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 20.0265rem;
-    height: 54.8125rem;
+    width: 321px;
+    height: 877px;
+    /* margin:0 auto; */
     
 }
-
 
 #letterform-container {
     position:relative;
     display: flex;
     margin: 0;
+    justify-content: space-evenly;
+    align-items:center;
 }
 
 #skeleton {
@@ -44,21 +49,31 @@ body {
 }
 
 #button {
+    position:relative;
     width: 5.8705rem;
     height: 12.55081rem;
     flex-shrink: 0;
-    margin-right: 4.7rem;
-
-
+    /* margin: 0 auto; */
 }
 
-/* #button:hover {
-    color:
+#hover-button {
+    display: none;
+    position: absolute;
+}
+
+#button:hover {
+    background-color:black;
+    cursor: pointer;
+}
+
+/* #button:active {
+    
 } */
 
 #content {
     display:flex;
-
+    justify-content: space-between;
+    margin: auto 0;
 }
 
 #image-and-other {
@@ -74,10 +89,11 @@ body {
 #alpha {
     color: #36E43D;
 font-family: Creepster;
-font-size: 6.25rem;
+font-size: 100px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+align-self: center;
 }
 
 .bodytext {
