@@ -7,16 +7,22 @@ body {
     background-color:#D795EE;
     width: 1024px;
     height: 1366px;
-    margin: auto;
+    margin: 0;
+    padding:0;
     
 }
 
+.body-container {
+    width: 700px ;
+    margin:0 auto;
+}
+
 #slime {
-    width: 1183px;
-    height:279px;
-    margin: auto 0;
+    width: 1024px;
+    height: 192px;
+    margin: 0 auto;
     align-self:center;
-    border-top: 100%;
+    overflow:visible;
 }
 
 /* ****letterform and button**** */
@@ -31,7 +37,7 @@ body {
     line-height: normal;
     width: 321px;
     height: 877px;
-    /* margin:0 auto; */
+    margin:0;
     
 }
 
@@ -41,23 +47,36 @@ body {
     margin: 0;
     justify-content: center;
     align-items:center;
+    margin: 0 auto;
 }
 
 #skeleton {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
+    top:159px;
+    right:-110px;
+    transition: opacity 0.5s;
+}
+
+#skeleton.visible {
+    visibility:visible;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 #button {
     position:relative;
     flex-shrink: 0;
+    top: 300px;
+    right: 0px;
     /* margin: 0 auto; */
 }
 
-#hover-button {
+/* #hover-button {
     display: none;
     position: absolute;
-}
+} */
 
 #button:hover {
     background-color:black;
@@ -72,6 +91,8 @@ body {
     display:flex;
     justify-content: space-between;
     margin: auto 0;
+    width: 700px;
+    height: 270px;
 }
 
 #image-and-other {
@@ -82,21 +103,34 @@ body {
 
 /* ***styling*** */
 
-
-
-#alpha {
+.alpha {
     color: #36E43D;
-font-family: Creepster;
-font-size: 100px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-align-self: center;
+    font-family: Creepster;
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 20px;
+    width: 700px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.alpha::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+.alpha::-webkit-scrollbar-track {
+    background-color: #aea9c1;
+}
+
+.alpha::-webkit-scrollbar-thumb {
+    background-color: #1C7B20
+
 }
 
 .bodytext {
-    width: 16.875rem;
-    height: 16.875rem;
+    height: 270px;
+    width: 270px;
     flex-shrink: 0;
     color: #0E360F;
     font-family: Crimson Pro;
@@ -108,39 +142,35 @@ align-self: center;
 
 .bodytext em {
     color: #1C7B20;
-font-family: Creepster;
-font-size: 1.125rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Creepster;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .heading {
     color: #1C7B20;
-font-family: Creepster;
-font-size: 1.125rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Creepster;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 #photo {
-border-radius: 5.6875rem;
-background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-width: 5.625rem;
-height: 5.6875rem;
-flex-shrink: 0;
+    border-radius: 5.6875rem;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 5.625rem;
+    height: 5.6875rem;
+    flex-shrink: 0;
 }
 
 #creepster-heading {
     color: #1C7B20;
-font-family: Creepster;
-font-size: 4rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-h1 {
-    margin:60px;
+    font-family: Creepster;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
