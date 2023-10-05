@@ -14,15 +14,6 @@ body {
     
 }
 
-body.black {
-    background-color:#B8B8B8;
-
-}
-
-body.black p {
-    color: white!important;
-}
-
 .body-container {
     /* width: 700px ; */
     margin:0 auto;
@@ -48,8 +39,6 @@ body.black p {
     width: 321px;
     height: 877px;
     margin:0;
-    margin-top: -173px;
-    margin-bottom: -114px;
     
 }
 
@@ -87,21 +76,9 @@ body.black p {
     /* margin: 0 auto; */
 }
 
-#button path {
-    fill:#36E43D;
-}
 
-body.black #button path,
-body.black #slime path {
-    fill:black;
-}
-
-body.black #button:hover path {
-    fill:yellow;
-}
-
-#button:hover path{
-    fill:black;
+#button:hover {
+    background-color:black;
     cursor: pointer;
 }
 
