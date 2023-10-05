@@ -1,3 +1,6 @@
+* {
+    transition-duration: .5s;
+}
 h1,h2,h3,h4,h5,h6,p {
     margin:0;
     padding:0;
@@ -11,6 +14,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding:0;
+    transition: background-color 1s;
     
 }
 
@@ -20,8 +24,7 @@ body.black {
 }
 
 body.black p {
-    color: black!important;
-    transition: opacity 0.5s;
+    color: black;
 }
 
 .body-container {
@@ -34,6 +37,11 @@ body.black p {
     height: 192px;
     margin: 0 auto;
     align-self:center;
+}
+
+#slime path {
+    fill:#36E43D;
+    transition: fill 5s;
 }
 
 /* ****letterform and button**** */
@@ -73,13 +81,13 @@ body.black p {
     position: absolute;
     top: 78px;
     right: 42px;
-    transition: opacity 0.5s;
+    transition: opacity ;
 }
 
 #skeleton.visible {
     visibility:visible;
     opacity: 1;
-    transition: opacity 0.5s;
+    transition: opacity ;
 }
 
 #button {
@@ -90,21 +98,19 @@ body.black p {
     /* margin: 0 auto; */
 }
 
-#button path {
-    fill:#36E43D;
-}
-
-body.black #button path,
-body.black #slime path {
-    fill:black;
-}
-
+#button path,
 body.black #button:hover path {
     fill:#36E43D;
 }
 
-#button:hover path{
+body.black #button path,
+body.black #slime path,
+#button:hover path {
     fill:black;
+    transition: fill 1s;
+}
+
+#button:hover path {
     cursor: pointer;
 }
 
@@ -121,8 +127,9 @@ body.black #button:hover path {
 
 #image-and-other {
     display: flex;
-    margin-top: 142px;
     align-items: baseline;
+    margin: 0 auto;
+    margin-top: 161px;
 }
 
 
@@ -194,7 +201,7 @@ body.black a {
     margin-left: 213px;
 }
 
-.bodytext2 {
+.glinks {
     width: 270px;
     flex-shrink: 0;
     color: #0E360F;
@@ -203,8 +210,20 @@ body.black a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: 223px;
+}
+
+.bodytext2 {
+    width: 156px;
+    flex-shrink: 0;
+    color: #0E360F;
+    font-family: Crimson Pro;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin-bottom: 100px;
-    margin-left: 50px;
+    margin-left: 164px;
 }
 
 body.black .bodytext2 {
@@ -243,6 +262,7 @@ body.black .bodytext em {
     font-weight: 400;
     line-height: normal;
     margin-left: 212px;
+    margin-top: -15px;
 }
 
 body.black .heading2 {
@@ -257,7 +277,16 @@ body.black .heading {
     border-radius: 50%;
     width: 90px;
     height: 90px;
-    margin-top: -169px;
+    margin: 0 auto;
+    margin-top: -147px;
+    margin-left: 55px;
+    transition: filter;
+}
+
+body.black #photo {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    transition: filter;
 }
 
 #creepster-heading {
@@ -275,4 +304,8 @@ body.black .heading {
 
 body.black #creepster-heading {
     color:black;
+}
+
+.sources {
+    margin-top: -29px
 }
