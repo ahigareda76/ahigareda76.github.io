@@ -1,6 +1,7 @@
 * {
     transition-duration: .5s;
 }
+
 h1,h2,h3,h4,h5,h6,p {
     margin:0;
     padding:0;
@@ -14,13 +15,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding:0;
-    transition: background-color 1s;
+    transition: background-color;
     
 }
 
 body.black {
     background-color:#B8B8B8;
-
 }
 
 body.black p {
@@ -37,11 +37,11 @@ body.black p {
     height: 192px;
     margin: 0 auto;
     align-self:center;
+    transition: fill;
 }
 
 #slime path {
     fill:#36E43D;
-    transition: fill 5s;
 }
 
 /* ****letterform and button**** */
@@ -81,13 +81,13 @@ body.black p {
     position: absolute;
     top: 78px;
     right: 42px;
-    transition: opacity ;
+    transition: opacity 1;
 }
 
 #skeleton.visible {
     visibility:visible;
     opacity: 1;
-    transition: opacity ;
+    transition: opacity 1s;
 }
 
 #button {
@@ -107,7 +107,7 @@ body.black #button path,
 body.black #slime path,
 #button:hover path {
     fill:black;
-    transition: fill 1s;
+    transition: fill;
 }
 
 #button:hover path {
@@ -280,13 +280,13 @@ body.black .heading {
     margin: 0 auto;
     margin-top: -147px;
     margin-left: 55px;
-    transition: filter;
+    transition: filter 1s;
 }
 
 body.black #photo {
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
-    transition: filter;
+    transition: filter 1s;
 }
 
 #creepster-heading {
