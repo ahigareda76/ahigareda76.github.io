@@ -24,11 +24,34 @@ body {
 
 /****************** 
 navagation */
-#nav {
+/* #nav {
     font-family:var(--display);
     color:black;
     display:flex;
     flex-direction: row;
+} */
+nav {
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    padding: 56px;
+    position:relative;
+}
+
+nav ul li {
+    list-style-type: none;
+    display:contents;
+}
+
+#nav-home {
+    position:absolute;
+    left:164px;
+}
+
+#flim {
+    position:absolute;
+    top:0;
+    left:0;
 }
 
 h1 {
@@ -41,6 +64,22 @@ h2 {
 
 /******************
 layout */
+
+.flex {
+    display:flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 852px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.div {
+    margin-left:30px;
+}
+
 #flim {
     margin: auto 0;
     width: 1400px;
@@ -48,6 +87,7 @@ layout */
 
 #monsters{  
     margin: auto 0;
+    width:100%;
 }
 
 .intro {
@@ -58,19 +98,20 @@ layout */
 }
 
 section {
-    width: 100vw;
-    height: 100vh;
-    padding: 60px;
+    width: 100%;
+    height: 100%;
 }
 
 /********************Frankenstein*****************/
 
 #first-section {
+    position:relative;
 }
 
-.frank {
-    display:flex;
-    flex-direction: row;
+.section-background {
+    position:absolute;
+    top:0;
+    left:0;
 }
 
 .info-f {
@@ -80,14 +121,9 @@ section {
 
 /***********************Gillman************ */
 
-#second-section {
+/* #second-section{
 
-}
-
-.gill {
-    display:flex;
-    flex-direction: row;
-}
+} */
 
 .info-g {
     width: 562px;
@@ -95,18 +131,13 @@ section {
 }
 
 /* *****************dracula*************** */
-#third-section {
+/* #third-section {
   
-}
+} */
 
 #dracy {
     width: 264px;
     height: 396px;
-}
-
-.drac {
-    display:flex;
-    flex-direction: row;
 }
 
 .info-d {
@@ -127,3 +158,11 @@ button {
     width: 299px;
     height: 86px;
   }
+
+  /*************************************Frankenstein Page**************************** */
+
+
+
+
+   /*************************************Gillman Page**************************** */
+
