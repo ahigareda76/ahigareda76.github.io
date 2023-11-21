@@ -1,0 +1,56 @@
+/* This is the main css stylesheet for ahigareda76.github.io/project-2 site */
+
+/******************
+typography */
+:root {
+    --sans:"franklin-gothic-atf", 
+    sans-serif;
+    --display:"ccmonstermash", 
+    sans-serif;
+    --display2:"ccmonstermashworn",
+     sans-serif;
+}
+
+/****************** 
+color */
+
+/****************** 
+navagation */
+
+/******************
+layout */
+
+section {
+    width: 100vw;
+    height: 100vh;
+    padding: 60px;
+}
+
+#first-section {
+    background-color:red;
+    font-family:var(--display);
+}
+
+#second-section {
+    background-color:blue;
+    font-family:var(--display2);
+}
+
+#third-section {
+    background-color: green;
+}
+
+.flex {
+    display:flex;
+    flex-direction: row;
+}
+
+.chunk {
+    background-color:white;
+}
+
+.image {
+    width: 500px;
+    height: 300px;
+    background-color:aqua;
+}
