@@ -1,7 +1,6 @@
 /* This is the main css stylesheet for ahigareda76.github.io/project-2 site */
 
-/******************
-typography */
+/********************************************typography */
 :root {
     --sans:"franklin-gothic-atf", 
     sans-serif;
@@ -11,31 +10,39 @@ typography */
      sans-serif;
 }
 
-/****************** 
-color */
+h1 {
+    font-family:var(--display)
+}
+
+/****************** ***********************************color */
 
 body {
-    margin: auto 0;
     background-color: #202020;
     color:white;
     font-family:var(--sans);
     font-size: 18px;
+    margin: auto 0;
 }
 
-/****************** 
-navagation */
-/* #nav {
-    font-family:var(--display);
-    color:black;
-    display:flex;
-    flex-direction: row;
-} */
+.line-break {
+    height: 1px;
+    width:263px;
+    background-color: white;
+}
+
+/************************************************navagation */
+
 nav {
     display:flex;
     width:100%;
     justify-content: space-between;
     padding: 56px;
     position:relative;
+}
+
+nav h1 {
+    display:contents;
+    position:absolute;
 }
 
 nav ul li {
@@ -48,7 +55,7 @@ nav ul li {
     left:164px;
 }
 
-#flim {
+#film {
     position:absolute;
     top:0;
     left:0;
@@ -87,7 +94,8 @@ layout */
 
 #monsters{  
     margin: auto 0;
-    width:100%;
+    position: relative;
+    top: 40px;
 }
 
 .intro {
@@ -103,12 +111,15 @@ section {
 }
 
 /********************Frankenstein*****************/
-
+#frank-poster {
+    width: 264px;
+    height: 396px;
+}
 #first-section {
     position:relative;
 }
 
-.section-background {
+.section-background1 {
     position:absolute;
     top:0;
     left:0;
@@ -121,9 +132,16 @@ section {
 
 /***********************Gillman************ */
 
-/* #second-section{
+#second-section {
+    position:relative;
+}
 
-} */
+.section-background2 {
+    position: relative;
+    top: 67px;
+    left: 0;
+}
+
 
 .info-g {
     width: 562px;
@@ -131,9 +149,14 @@ section {
 }
 
 /* *****************dracula*************** */
-/* #third-section {
-  
-} */
+#third-section {
+    position:relative;
+}
+.section-background3 {
+    position: relative;
+    top: 238px;
+    left: 0;
+}
 
 #dracy {
     width: 264px;
@@ -161,8 +184,74 @@ button {
 
   /*************************************Frankenstein Page**************************** */
 
+#paragraph-1 {
+    height:295px;
+    width:600px;
+}
 
+#paragraph-2 {
+    height:228px;
+    width:600px;
+}
+
+#paragraph-3 {
+    height:325px;
+    width:600px;
+}
+
+#paragraph-4 {
+    height:346px;
+    width:600px;
+}
+
+#paragraph-5 {
+    height:259pxpx;
+    width:600px;
+}
 
 
    /*************************************Gillman Page**************************** */
 
+#green-water {
+}
+
+#para-1 {
+    height:171px;
+    width: 600px;
+}
+
+#para-2 {
+    height:192px;
+    width:600px;
+}
+
+#para-3 {
+    height:325px;
+    width:600px;
+}
+
+#para-4 {
+    height:501px;
+    width:600px;
+}
+
+.titles {
+    font-size: 32px;
+}
+
+/* *****************************************************Dracula */
+
+#parag-1 {
+    height:352px;
+    width:600px;
+}
+
+#parag-2 {
+    height:390px;
+    width:597px;
+}
+
+#parag-3 {
+    height:765px;
+    width:597px;
+}
