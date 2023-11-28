@@ -31,6 +31,17 @@ body {
     background-color: white;
 }
 
+.background-inner {
+    position:absolute;
+}
+
+.on-top {
+    position:relative;
+    left: 220;
+    top: 300;
+}
+
+
 /************************************************navagation */
 
 nav {
@@ -39,6 +50,7 @@ nav {
     justify-content: space-between;
     padding: 56px;
     position:relative;
+    z-index:10;
 }
 
 nav h1 {
@@ -74,12 +86,12 @@ h2 {
     font-size: 32px;
 }
 
-/******************
-layout */
+/****************************************layout */
 
 .flex {
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .container {
@@ -94,7 +106,7 @@ layout */
 
 #film {
     margin: 0 auto;
-    width: 1400px;
+    width: 1440px;
 }
 
 #monsters{  
@@ -126,13 +138,17 @@ layout */
 
 .section-background1 {
     position:absolute;
-    top:210px;
+    top:193px;
     left:0;
 }
 
 .info-f {
     width: 557px;
     height: 386px;
+}
+
+.monsterf {
+    top:515px;
 }
 
 /***********************Gillman************ */
@@ -153,6 +169,10 @@ layout */
     height: 347px;
 }
 
+.monsterg {
+    top: 1063px;
+}
+
 /* *****************dracula*************** */
 #third-section {
     position:relative;
@@ -171,6 +191,10 @@ layout */
 .info-d {
     width: 558px;
     height: 373px;
+}
+
+.monsterd {
+    top: 1770px;
 }
 
 /*************button*********** */
@@ -246,6 +270,7 @@ button {
 .titles {
     font-size: 32px;
 }
+
 
 /* *****************************************************Dracula */
 
