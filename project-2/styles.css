@@ -70,8 +70,12 @@ nav h1 {
 
 nav ul li {
     list-style-type: none;
-    display:contents;
 }
+
+#learnmore {
+    color:black;
+}
+
 
 #nav-home {
     position:absolute;
@@ -191,18 +195,18 @@ h2 {
   padding: 50px;
   padding-top: 240px;
   right: -47px;
-  background: #ededed;
+  background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(100%, 0);
+  transform: translate(200%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-
 
 #menu li
 {
   padding: 10px 0;
+  padding-right: 13px;
   font-size: 22px;
   font-family: var(--display);
 }
@@ -217,16 +221,28 @@ h2 {
   #menu {
     transform: none;
     opacity: 0;
-
     transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 }
+
+#menu span {
+    width: 100px;
+}
+
+#menu a:hover {
+    color:#33733D;
+}
+
 /****************************************layout */
 
 .flex {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.top-para {
+    margin-top: 700px;
 }
 
 .container {
@@ -251,12 +267,11 @@ h2 {
 }
 
 .intro {
-    margin: 0 auto;
+    margin: 148px auto;
     width: 852px;
     height: 334px;
     font-size: 24px;
 }
-
 
 /********************Frankenstein*****************/
 #frank-poster {
@@ -341,6 +356,8 @@ button {
     width: 299px;
     height: 86px;
     border-style:inherit;
+    position: relative;
+    z-index: 11;
   }
 
   button:hover {
